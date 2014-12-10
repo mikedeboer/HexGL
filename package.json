@@ -1,0 +1,17 @@
+{
+  "build_id": "20131009161040",
+  "vendor": "BKCore",
+  "name": "hexgl",
+  "title": "HexGL",
+  "developer_email": "unknown@unknown.com",
+  "version": "0.1.0",
+  "enableSystemPrivileges": true,
+  "resizable": true,
+  "menubar": true,
+  "appicon": {
+    "32": "icon_32.png",
+    "64": "icon_64.png",
+    "128": "icon_128.png",
+    "256": "icon_256.png"
+  }
+}

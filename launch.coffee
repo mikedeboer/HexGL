@@ -82,4 +82,5 @@ else
   $('start').onclick = ->
     $('step-1').style.display = 'none'
     $('step-2').style.display = 'block'
+    require('fullscreen').enable();
     $('step-2').style.backgroundImage = "url(css/help-#{s[0][3]}.png)"

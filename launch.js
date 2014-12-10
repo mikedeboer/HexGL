@@ -109,6 +109,7 @@
     $('start').onclick = function() {
       $('step-1').style.display = 'none';
       $('step-2').style.display = 'block';
+      require('fullscreen').enable();
       return $('step-2').style.backgroundImage = "url(css/help-" + s[0][3] + ".png)";
     };
   }

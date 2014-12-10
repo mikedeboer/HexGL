@@ -30,15 +30,16 @@
       }
     </style>
     <script type="text/javascript">
-    //analytics
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-26274524-4']);
-    _gaq.push(['_trackPageview']);
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
+      var hotkey = require("hotkey");
+      var process = require("sdk/system/process");
+      var fullscreen = require("fullscreen");
+
+      var platform = process.platform;
+      hotkey.register(platform == "darwin" ? "meta-q" :
+                      platform == "winnt"  ? "alt-f4" : "ctrl-q", process.exit);
+      hotkey.register(platform == "darwin" ? "meta-alt-f" :
+                      "ctrl-shift-f", fullscreen.toggle);
+
     </script>
   </head>
 
